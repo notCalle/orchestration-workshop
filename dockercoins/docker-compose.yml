@@ -30,8 +30,8 @@ webui:
 		redis:54.210.231.65
     ports:
       - "8000:80"
-    volumes:
-      - "./webui/files/:/files/"
+#    volumes:
+#      - "./webui/files/:/files/"
 
 #redis:
 #    image: redis
