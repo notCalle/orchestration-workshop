@@ -35,7 +35,7 @@ webui:
 
 #redis:
 #    image: redis
-	
+
 worker:
     build: worker
     links:
