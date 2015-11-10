@@ -37,7 +37,7 @@ redis:
 worker:
     build: worker
     links:
-      - rng
+      - rng0:rng
       - hasher
       - redis
 
