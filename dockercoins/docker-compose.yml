@@ -24,20 +24,24 @@ hasher:
 
 webui:
     build: webui
-    links:
-      - redis
+#    links:
+#      - redis
+	extra_hosts:
+		redis:54.210.231.65
     ports:
       - "8000:80"
     volumes:
       - "./webui/files/:/files/"
 
-redis:
-    image: redis
-
+#redis:
+#    image: redis
+	
 worker:
     build: worker
     links:
       - rng0:rng
       - hasher
-      - redis
+#      - redis
+	extra_hosts:
+		redis:54.210.231.65
 
