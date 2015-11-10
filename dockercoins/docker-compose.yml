@@ -27,7 +27,7 @@ webui:
 #    links:
 #      - redis
     extra_hosts:
-        redis:54.210.231.65
+        - redis:54.210.231.65
     ports:
       - "8000:80"
 #    volumes:
@@ -43,5 +43,5 @@ worker:
       - hasher
 #      - redis
     extra_hosts:
-        redis:54.210.231.65
+        - redis:54.210.231.65
 
